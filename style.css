@@ -1,0 +1,77 @@
+body {
+            background: url('earth.jpg') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            font-family: 'Raleway Dots', serif;
+        }
+
+h1{
+    color: #e6f2ff;
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 3px;
+    font-weight: 800;
+}
+
+h2{
+    margin-top: 75px;
+    color: #e6f2ff;
+    font-size: 65px;
+    margin-bottom: 2px;
+    font-weight: 800;
+    letter-spacing: 10px;
+}
+h3{
+    color: #e6f2ff;
+    font-size: 15px;
+    margin-top: 2px;
+    font-weight: bolder;
+    letter-spacing: 7px;
+}
+
+
+.title {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 180px;
+}
+
+/*.footnote{
+    margin-top: 250px;
+}*/
+
+
+
+.bio {
+    color: #e6f2ff;
+    font-size: 25px;
+    width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 220px;
+    font-weight: 800;
+
+}
+
+.me{
+    height: 125px;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+a{
+    color:white;
+}
+
+.sidenav{
+    font-size: 18px;
+    margin-right: 20px;
+}
