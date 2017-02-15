@@ -38,11 +38,6 @@ h5{
     font-size: 35px;
 }
 
-h6{
-    color: black;
-    font-size: 35px;
-}
-
 
 li {
     display: inline-block;
@@ -82,6 +77,30 @@ a{
     background-size: cover;
     height: 800px;
 }
+
+.contact{
+    height: 350px;
+    background-color: #202020;
+    padding-top: 30px;
+}
+
+.contact-headline {
+    font-size: 30px;
+    text-align: center;
+}
+
+.contact-link {
+    color: #e6f2ff;
+    font-size: 19px;
+    font-weight: bold;
+    
+}
+
+.email {
+    color: black;
+    text-align: center;
+}
+
 
 .interesting {
     border-style: solid;
@@ -128,6 +147,13 @@ a{
     margin-right: auto;
     text-align: center;
     margin-top: 180px;
+}
+
+.yellow {
+    border-bottom: none;
+    border-right: none;
+    width: 850px;
+    border-top: 5px double #F5A623;
 }
 
 
