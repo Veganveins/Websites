@@ -28,10 +28,26 @@ h3{
     letter-spacing: 7px;
 }
 
+h4{
+    color: black;
+    font-size: 35px;
+}
+
+h5{
+    color: black;
+    font-size: 35px;
+}
+
+h6{
+    color: black;
+    font-size: 35px;
+}
+
 
 li {
     display: inline-block;
-    text-align: center;
+    text-align: left;
+    margin: 0 0 10px 10px;
 
 }
 
@@ -39,24 +55,12 @@ a{
     color:purple;
 }
 
-.title {
-    width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    margin-top: 180px;
+.bar {
+
+    text-align: right;
+    margin-right: 10px;
+    margin-top: -100px;
 }
-
-
-.container {
-    background: url('earth.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 800px;
-}
-
 
 .bio {
     color: gray;
@@ -70,6 +74,23 @@ a{
 
 }
 
+.container {
+    background: url('earth.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 800px;
+}
+
+.interesting {
+    border-style: solid;
+    border-color: #e6f2ff;
+    border-width: 1px;
+    letter-spacing: 3px;
+    font-size: 15px;
+}
+
 .me{
     height: 125px;
     border-radius: 100%;
@@ -80,15 +101,47 @@ a{
 }
 
 
-
 .nav-link{
     font-size: 18px;
     color: #e6f2ff;
     text-decoration: none;
+    text-align: right;
 }
 
-.interesting {
-    border-style: solid;
-    border-color: #e6f2ff;
-    border-width: 1px;
+
+.nav-link:hover {
+    color:#00ffff;
 }
+
+.section1{
+    background: url('quagga.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 800px;
+}
+
+.title {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 180px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
