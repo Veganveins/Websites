@@ -3,54 +3,182 @@
 
         <link href="https://fonts.googleapis.com/css?family=Raleway Dots" rel="stylesheet">
         <link rel = "stylesheet" type = "text/css" href="style.css">
-    
 
+       <!--  <link 
+            rel="stylesheet"
+            href="prism-atom-dark.css"
+            type="text/css"
+            media="screen"
+        /> -->
+
+        <!-- <script src="prism-min.js"></script>
+        <script src="prism.python.min.js"></script> -->
+    
     </head>
 
     
     <body>
-        <div class="container">
-            
-            <img class ="me" src="me.jpg " />
-            <h1 id="home">     Jane Thompson        </h1>
-    <ul class = "bar">
-        <li class = "interesting"><a href="#blog" class="nav-link">BLOG</a></li>
-        <li class = "interesting"><a href="#code" class="nav-link">CODE</a></li>
-        <li class = "interesting"><a href="#contact" class="nav-link">CONTACT</a></li>
-    </ul>
+        <div class="container" id="home">
+            <nav class = "bar">
+                    <li class = "interesting"><a href="#home" class="nav-link">HOME</a></li>
+                    <li class = "interesting"><a href="#blog" class="nav-link">BLOG</a></li>
+                    <li class = "interesting"><a href="#code" class="nav-link">CODE</a></li>
+                    <li class = "interesting"><a href="#contact" class="nav-link">CONTACT</a></li>
+                </nav>
+            <img class ="me" src="me.jpg "/>
+            <h1>     Jane Thompson        </h1>
+                
 
     
 
             
-            <div class ="title"> 
+                <div class ="title"> 
             
-                <h2>    Ursa Major        </h2>
-                <h3> the pale blue dot </h3>  
+                    <h2>    Ursa Major        </h2>
+                    <h3> the pale blue dot </h3>  
 
-            </div>        
+                </div>        
         </div>
 
 
 
         <p class="bio">
-                Hello World! I am a Data Analyst based in Cambridge, MA. My career in analytics has deepened my fascination with computer code. On a rainy weekend I'm often found working through programming challenges on Project Euler's website. You can check out some of my solutions here: <strong><a href="https://www.github.com/Veganveins/ProjectEuler">Github</a></strong>). This website is the first webpage I've built by researching the basics of web design in HTML and CSS. I've already decided that my next project will involve building a web scraper capable of pulling data from an external API. Besides the technical stuff, I enjoy a tough Freeletics workout (check them out here: <strong><a href="https://www.freeletics.com/en">Freeletics</a></strong>). I also love preparing new and delicous vegan recipes, as well as watching the latest documentaries regarding climate change. The most recent film I've seen is Before the Flood, directed by Leonardo DiCaprio. You can find out more here: <strong><a href="https://www.beforetheflood.com/">Before the Flood</a></strong>.
+                I'm equal parts mathematican, engineer, and analyst. I love solving mathematical puzzles, building out new projects, and making decisions based on new information. I'm currently working as a Quantitative Data Analyst based in Cambridge, MA. I'm mostly working with Python these days.  You can check out some of my solutions to Project Euler challenges here: <strong><a href="https://www.github.com/Veganveins/ProjectEuler">Github</a></strong>). This website represents my first ever webpage designed from scratch using HTML and CSS. When I'm not working behind my computer screen I enjoy a tough Freeletics workout (check them out here: <strong><a href="https://www.freeletics.com/en">Freeletics</a></strong>). I also love preparing new and delicous vegan recipes, as well as watching the latest documentaries regarding climate change. The most recent film I've seen is Before the Flood, directed by Leonardo DiCaprio. You can find out more here: <strong><a href="https://www.beforetheflood.com/">Before the Flood</a></strong>.
             </p>
-<div class="section1">
-        <h4 id="code"> Blog </h4>
+            <p id="blog"></p>
+
+
+        <div class="section1">
+            <h4 class="title"> Blog </h4>
+            <hr class="blue">
+            Here's some blog text<br/>
+            Here's some blog text<br/>
+            Here's some blog text<br/>
+            Here's some blog text<br/>
         </div>
-        <h5 id="blog"> Code Snippets </h5>
+
+
+
+
+
+
+        <p id="code"></p>
+        
+        <h5> Code Snippets </h5>
+            
+            <hr class="blue">
+
+            <div class="box">
+                <h4> 48. The series, 1<sup>1</sup> + 2<sup>2</sup> + 3<sup>3</sup> + ... + 10<sup>10</sup> = 10405071317.
+
+                This program will find the last ten digits of the series, 1<sup>1</sup> + 2<sup>2</sup> + 3<sup>3</sup> + ... + 1000<sup>1000</sup>. </h4>
+            
+            </div>
+
+            <div class="box">
+<pre><code class="language-python">
+def self_powers(n):
+    this_sum = 0
+    for i in range(1,n):
+        this_sum += pow(i,i)
+    return this_sum
+
+print self_powers(1001)%10000000000</code></pre> 
+            </div>
+
+            <br class="clear"/>
+
+            <div class="box">
+<pre><code class="language-python">def get_rotations(n):
+    number = str(n)
+    rotated_number = number
+    rotations = [n]
+    for i in range(0, len(number) - 1):
+        special_digit = rotated_number[0]
+        rotated_number = rotated_number[1:]
+        rotated_number = rotated_number + special_digit
+        rotations.append(int(rotated_number))
+    return rotations
+
+def is_circular(n):
+        nums_to_search = get_rotations(n)
+        for num in nums_to_search:
+            if is_prime(num) == False:
+                return False
+        return True
+                
+
+def find_circular_primes(n):
+    circular_primes = [2]
+    for i in range(3,n,2):
+        if is_prime(i):
+            if is_circular(i):
+                circular_primes.append(i)
+    return len(circular_primes)
+    
+
+if __name__ == '__main__':
+    print find_circular_primes(1000000)
+    print ">> Result returned in: ", (time.time() - start_time), "seconds"</code></pre> 
+
+            </div>
+
+            <div class="box">
+                <h4> 35. The number, 197, is called a circular prime because all rotations of the digits: 197, 971, and 719, are themselves prime. There are thirteen such primes below 100: 2, 3, 5, 7, 11, 13, 17, 31, 37, 71, 73, 79, and 97. How many circular primes are there below one million? </h4>
+            </div>
+
+            <br class="clear"/>
+
+            <div class="box">
+                <h4> 24. A permutation is an ordered arrangement of objects. For example, 3124 is one possible permutation of the digits 1, 2, 3 and 4. If all of the permutations are listed numerically or alphabetically, we call it lexicographic order. The lexicographic permutations of 0, 1 and 2 are: 012   021   102   120   201   210
+                What is the millionth lexicographic permutation of the digits 0, 1, 2, 3, 4, 5, 6, 7, 8 and 9?</h4>
+            </div>
+
+            <div class="box">
+            <pre><code class="language-python">def get_rotations(n):
+from itertools import permutations
+
+print list(permutations([0,1,2,3,4,5,6,7,8,9]))[999999]<code></pre> 
+            </div>
+
+            <br class="clear"/>
         
 
-        <div class="contact">
-            <h3 class="contact-headline">Email Me</h3>
-            <hr class="yellow" />
 
+
+
+
+        <div class="contact">
+            <h3 id="contact" class="contact-headline">Contact</h3>
+            <hr class="yellow" />
+            <p class = "email-me"> Email Me </p>
             <p class= "email"> 
                 <a href="mailto:thompsonjjet23@gmail.com" class="contact-link">
                     thompsonjjet23@gmail.com
+                    <br/>
+                    
                 </a>
             </p>
+            
+            <p class = "email-me"> Follow Me <br/><br/>
+                
+                
+                    <a href="https://www.github.com/Veganveins">
+                        <img src="git.png" width = "50" height = "60" align = "middle" class = "logo">
+                    </a>
 
+                    <a href="https://www.linkedin.com/in/jane-thompson-a2161160/">
+                        <img src="linkedin.png" width = "40" height = "40" align = "middle" class= "logo">
+                    </a>
+                
+
+            </p>
+
+            <p class = "copyright"> 
+            <br />
+            All rights reserved.
+            </p>
+            
 
 
         </div>
