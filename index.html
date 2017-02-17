@@ -4,15 +4,15 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway Dots" rel="stylesheet">
         <link rel = "stylesheet" type = "text/css" href="style.css">
 
-       <!--  <link 
+        <link 
             rel="stylesheet"
             href="prism-atom-dark.css"
             type="text/css"
             media="screen"
-        /> -->
+        />
 
-        <!-- <script src="prism-min.js"></script>
-        <script src="prism.python.min.js"></script> -->
+        <script src="prism.js"></script>
+        
     
     </head>
 
@@ -69,7 +69,7 @@
             <hr class="blue">
 
             <div class="box">
-                <h4> 48. The series, 1<sup>1</sup> + 2<sup>2</sup> + 3<sup>3</sup> + ... + 10<sup>10</sup> = 10405071317.
+                <h4> The series, 1<sup>1</sup> + 2<sup>2</sup> + 3<sup>3</sup> + ... + 10<sup>10</sup> = 10405071317.
 
                 This program will find the last ten digits of the series, 1<sup>1</sup> + 2<sup>2</sup> + 3<sup>3</sup> + ... + 1000<sup>1000</sup>. </h4>
             
@@ -77,6 +77,7 @@
 
             <div class="box">
 <pre><code class="language-python">
+
 def self_powers(n):
     this_sum = 0
     for i in range(1,n):
@@ -89,15 +90,17 @@ print self_powers(1001)%10000000000</code></pre>
             <br class="clear"/>
 
             <div class="box">
-<pre><code class="language-python">def get_rotations(n):
+<pre><code class="language-python">
+
+def get_rotations(n):
     number = str(n)
-    rotated_number = number
+    rotated_num = number
     rotations = [n]
     for i in range(0, len(number) - 1):
-        special_digit = rotated_number[0]
-        rotated_number = rotated_number[1:]
-        rotated_number = rotated_number + special_digit
-        rotations.append(int(rotated_number))
+        spec_dig = rotated_num[0]
+        rotated_num = rotated_num[1:]
+        rotated_num = rotated_num + spec_dig
+        rotations.append(int(rotated_num))
     return rotations
 
 def is_circular(n):
@@ -119,25 +122,25 @@ def find_circular_primes(n):
 
 if __name__ == '__main__':
     print find_circular_primes(1000000)
-    print ">> Result returned in: ", (time.time() - start_time), "seconds"</code></pre> 
+    </code></pre>< 
 
             </div>
 
             <div class="box">
-                <h4> 35. The number, 197, is called a circular prime because all rotations of the digits: 197, 971, and 719, are themselves prime. There are thirteen such primes below 100: 2, 3, 5, 7, 11, 13, 17, 31, 37, 71, 73, 79, and 97. How many circular primes are there below one million? </h4>
+                <h4> The number, 197, is called a circular prime because all rotations of the digits: 197, 971, and 719, are themselves prime. There are thirteen such primes below 100: 2, 3, 5, 7, 11, 13, 17, 31, 37, 71, 73, 79, and 97. How many circular primes are there below one million? </h4>
             </div>
 
             <br class="clear"/>
 
             <div class="box">
-                <h4> 24. A permutation is an ordered arrangement of objects. For example, 3124 is one possible permutation of the digits 1, 2, 3 and 4. If all of the permutations are listed numerically or alphabetically, we call it lexicographic order. The lexicographic permutations of 0, 1 and 2 are: 012   021   102   120   201   210
+                <h4> A permutation is an ordered arrangement of objects. For example, 3124 is one possible permutation of the digits 1, 2, 3 and 4. If all of the permutations are listed numerically or alphabetically, we call it lexicographic order. The lexicographic permutations of 0, 1 and 2 are: 012   021   102   120   201   210
                 What is the millionth lexicographic permutation of the digits 0, 1, 2, 3, 4, 5, 6, 7, 8 and 9?</h4>
             </div>
 
             <div class="box">
-            <pre><code class="language-python">def get_rotations(n):
-from itertools import permutations
+            <pre><code class="language-python">
 
+from itertools import permutations
 print list(permutations([0,1,2,3,4,5,6,7,8,9]))[999999]<code></pre> 
             </div>
 
