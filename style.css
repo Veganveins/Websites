@@ -30,12 +30,18 @@ h3{
 
 h4{
     color: black;
-    font-size: 35px;
+    font-size: 28px;
+    font-weight: bolder;
+    margin-top: 100px;
 }
 
 h5{
     color: black;
     font-size: 35px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bolder;
+    margin-top: 100px;
 }
 
 
@@ -47,26 +53,68 @@ li {
 }
 
 a{
-    color:purple;
+    color: purple;
+}
+
+p{
+    text-align: center;
+
 }
 
 .bar {
 
     text-align: right;
-    margin-right: 10px;
-    margin-top: -100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 25px;
+    background-color: lightgray;
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
 
 .bio {
     color: gray;
     font-size: 25px;
-    width: 1500px;
+    width: 850px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     margin-top: 90px;
     font-weight: 800;
 
+}
+
+.blue {
+    border-top: 5px double darkgrey;
+    width: 250px;
+}
+
+.box {
+    float: left;
+    width: 42.5%;
+    margin-left: 2%;
+    margin-top: 80px;
+}
+
+.clear {
+
+    clear: both;
+}
+
+.copyright {
+    color: #e6f2ff;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.copyright:before {
+    content: "\00a9 Jane Thompson 2017.";
 }
 
 .container {
@@ -92,14 +140,29 @@ a{
 .contact-link {
     color: #e6f2ff;
     font-size: 19px;
-    font-weight: bold;
+    font-weight: normal;
     
 }
+
+.contact-link:hover {
+    color: red;
+}
+
 
 .email {
     color: black;
     text-align: center;
 }
+
+.email-me {
+    color: #e6f2ff;
+    font-size: 19px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 15px;
+
+}
+
 
 
 .interesting {
@@ -110,36 +173,65 @@ a{
     font-size: 15px;
 }
 
-.me{
+.links {
+    align-content: center;
+}
+
+.logo {
+    border-radius: 100%;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%); 
+}
+
+
+.logo:hover {
+    border-radius: 100%;
+    -webkit-filter: grayscale(10%);
+    -moz-filter: grayscale(10%);
+    -o-filter: grayscale(10%);
+    -ms-filter: grayscale(10%);
+    filter: grayscale(10%); 
+}
+
+.logo:hover {
+    outline: 5px red;
+}
+
+.me {
     height: 125px;
     border-radius: 100%;
     border-style: solid;
     border-color: white;
-    margin-top: 0px;
+    margin-top: 40px;
     margin-bottom: 0px;
+    
 }
 
 
-.nav-link{
-    font-size: 18px;
-    color: #e6f2ff;
+.nav-link {
+    font-size: 20px;
+    color: #595959;
     text-decoration: none;
     text-align: right;
+    font-weight: bold;
 }
 
 
 .nav-link:hover {
-    color:#00ffff;
+    color: red;
 }
 
-.section1{
+/*.section1{
     background: url('quagga.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     height: 800px;
-}
+}*/
 
 .title {
     width: 700px;
